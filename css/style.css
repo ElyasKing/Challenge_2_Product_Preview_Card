@@ -28,7 +28,7 @@ body {
     border: 1px solid #e9e9e9;
     border-radius: 3%;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .container-grid {
         grid-template-columns: 1fr;
         width: 400px;
@@ -45,25 +45,26 @@ body {
     background-size: 100% auto;
     border-radius: 3% 0 0 3%;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .container-grid-image {
         background-image: url("../images/image-product-mobile.jpg");
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 3% 3% 0 0;
         width: 100%;
-        height: 250px;
+        height: 240px;
     }
 }
 
 .container-grid-text {
     background-color: white;
     padding: 0rem 2rem 0rem 2rem;
-    border-radius: 0 0 3% 3%;
+    border-radius: 0 3% 3% 0;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     .container-grid-text {
-        padding: 0 2rem 1.5rem 2rem
+        padding: 0 2rem 1.5rem 2rem;
+        border-radius: 0 0 3% 3%;
     }
 }
 
@@ -78,7 +79,7 @@ body {
     margin: 1rem 0rem 1.5rem 0;
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: .5rem;
 }
 
 .container-grid-text-newprice{
